@@ -1,0 +1,29 @@
+.todo {
+    text-align: center;
+    align-items: center;
+    h1 {
+        color: #212121;
+        opacity: 0.9;
+        // &:hover + input {
+        //     width: 300px;
+        //     height: 100px;
+        // }
+    }
+    input {
+        width: 177px;
+        margin-bottom: 30px;
+        transition: all 0.6s;
+        font-size: 23px;
+        text-align: center;
+        transition-timing-function: ease-out;
+        box-sizing: content-box;
+        // &:hover {
+        //     width: 300px;
+        //     height: 100px;
+        //     text-align: left;
+        // }
+    }
+    label {
+        color: black;
+    }
+}
