@@ -1,13 +1,11 @@
 .todo {
     text-align: center;
-    align-items: center;
     h1 {
         color: #212121;
         opacity: 0.9;
-        // &:hover + input {
-        //     width: 300px;
-        //     height: 100px;
-        // }
+        &:hover + input {
+            width: 300px;
+        }
     }
     input {
         width: 177px;
@@ -17,13 +15,52 @@
         text-align: center;
         transition-timing-function: ease-out;
         box-sizing: content-box;
-        // &:hover {
-        //     width: 300px;
-        //     height: 100px;
-        //     text-align: left;
-        // }
+        &:hover {
+            width: 300px;
+            text-align: left;
+        }
     }
     label {
         color: black;
+    }
+    .items {
+        border: 1px solid #212121;
+        height: 50px;
+        overflow: hidden;
+        span {
+            &:first-child {
+                text-align: left;
+                font-size: 25px;
+                &:hover {
+                    cursor: pointer;
+                    color: green;
+                }
+            }
+            &:nth-of-type(2) {
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            &:nth-of-type(3){
+                opacity: 0.5;
+                font-size: 11px;
+            }
+            &:last-child {
+                text-align: right;
+                font-size: 25px;
+                &:hover {
+                    cursor: pointer;
+                    color: red;
+                }
+            }
+        }
+        .strikeThrough {
+            text-decoration: line-through;
+            text-decoration-thickness: 5px;
+            text-decoration-color: rgba(39, 153, 4, 0.9);
+            transition-duration: 0.3s;
+        }
+        .unChecked {
+            text-decoration: none;
+        }
     }
 }
